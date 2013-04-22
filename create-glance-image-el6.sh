@@ -3,6 +3,7 @@
 # Purpose : Create an Redhat based image that can be upload in Glance
 # Author  : Thomas Oulevey <thomas.oulevey@cern.ch>
 # Version : 20130422
+
 # License :
 # Copyright (c) 2013, Thomas Oulevey <thomas.oulevey@cern.ch>
 # All rights reserved.
@@ -139,9 +140,9 @@ ONBOOT="yes"
 TYPE="Ethernet"
 EOF
 
-if [ -e $NAMESERVER ]
+if [[ -z $NAMESERVER ]]
 then
-	echo "Setting nameserver to $NAMESERVER"
+	echo "Setting nameserver to $NAMESERVER..."
 	echo "nameserver $NAMESERVER" >> $TMP/loop/etc/resolv.conf
 fi
 
