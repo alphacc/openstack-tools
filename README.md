@@ -6,7 +6,7 @@ Tools and doc arround Openstack with el6 based distro.
 * create-glance-image-el6.sh
 
 USAGE:
-------
+=======
 
 usage: create-glance-image-el6.sh OPTIONS -u <url> <imagename>
 
@@ -23,12 +23,16 @@ OPTIONS:
    -u           release rpm url or file ;
 
 EXAMPLE:
---------
+========
 
 Centos 6:
+---------
+
 sudo create-glance-image-el6.sh  -u http://mirror.switch.ch/ftp/mirror/centos/6.4/os/x86_64/Packages/centos-release-6-4.el6.centos.10.x86_64.rpm mycentos64
 
 Scientific Linux:
+-----------------
 
 Scientific Linux Cern:
+----------------------
 
