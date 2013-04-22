@@ -5,24 +5,12 @@ Tools and doc arround Openstack with el6 based distro.
 
 * create-glance-image-el6.sh
 
-USAGE:
+Usage
 =======
 
-usage: create-glance-image-el6.sh OPTIONS -u <url> <imagename>
+    create-glance-image-el6.sh -h
 
-This script create a small(-ish) el6-based image for Glance and can import it. 
-
-OPTIONS:
-   -a           make image public in Glance
-   -e           extras packages to install e.g: "ipmitool mypkg2 mypkg3" ;
-   -g           execute glance command instead of printing it ;
-   -h           print this help ;
-   -n           nameserver ;
-   -p           set root password / default: toor ;
-   -s           image size. (number of block of 1024) / default: 2097152
-   -u           release rpm url or file ;
-
-EXAMPLE:
+Example
 ========
 
 Please choose your closest mirror :)
