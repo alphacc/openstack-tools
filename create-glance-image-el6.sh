@@ -140,7 +140,7 @@ ONBOOT="yes"
 TYPE="Ethernet"
 EOF
 
-if [[ -n $NAMESERVER ]]
+if [ ! -z $NAMESERVER ]
 then
 	echo "Setting nameserver to $NAMESERVER..."
 	echo "nameserver $NAMESERVER" >> $TMP/loop/etc/resolv.conf
