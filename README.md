@@ -1,48 +1,39 @@
-openstack-tools
-===============
+# openstack-tools
 
 Tools and doc arround Openstack with el6 based distro.
 
-* update_virsh_secret_ceph.sh
+## update_virsh_secret_ceph.sh
 
-Usage
-=======
+### Usage
 
     update_virsh_secret_ceph.sh -h
 
-Example
-========
+### Example
 
     update_virsh_secret_ceph.sh -u volumes -k 00000000-1111-1111-1111-000000000001 -d /path/my/dir
 
-Puppet:
---------
+#### Puppet:
     see cinder_conf_snippet.pp
 
 
-* create-glance-image-el6.sh
+## create-glance-image-el6.sh
 
-Usage
-=======
+### Usage
 
     create-glance-image-el6.sh -h
 
-Example
-========
+### Example
 
 Please choose your closest mirror :)
 
-Centos 6:
----------
+#### Centos 6:
 
     sudo create-glance-image-el6.sh -u http://mirror.switch.ch/ftp/mirror/centos/6.4/os/x86_64/Packages/centos-release-6-4.el6.centos.10.x86_64.rpm mycentos64
 
-Scientific Linux:
------------------
+#### Scientific Linux:
 
     sudo create-glance-image-el6.sh -u http://ftp.scientificlinux.org/linux/scientific/6.4/x86_64/os/Packages/sl-release-6.4-1.x86_64.rpm mysl64
 
-Scientific Linux Cern:
-----------------------
+#### Scientific Linux Cern:
     sudo create-glance-image-el6.sh -u http://linuxsoft.cern.ch/cern/slc6X/x86_64/Packages/sl-release-6.4-1.slc6.x86_64.rpm myslc64
 
