@@ -3,6 +3,23 @@ openstack-tools
 
 Tools and doc arround Openstack with el6 based distro.
 
+* update_virsh_secret_ceph.sh
+
+Usage
+=======
+
+    update_virsh_secret_ceph.sh -h
+
+Example
+========
+
+    update_virsh_secret_ceph.sh -u volumes -k 00000000-1111-1111-1111-000000000001 -d /path/my/dir
+
+Puppet:
+--------
+    see cinder_conf_snippet.pp
+
+
 * create-glance-image-el6.sh
 
 Usage
